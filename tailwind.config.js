@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: { 'open-sans': ['Open Sans', 'sans-serif'] },
       colors: {
-        primary: '#FF9933',
+        primary: '#ee7600',
       },
     },
   },

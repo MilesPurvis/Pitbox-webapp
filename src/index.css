@@ -7,7 +7,7 @@ input[type='text'],
 input[type='email'],
 input[type='password'],
 textarea {
-  @apply w-full border my-1 py-2 px-3 rounded-2xl;
+  @apply w-full border my-1 py-2 px-3 rounded-xl focus:ring-2 focus:ring-orange-300 focus:outline-none shadow-sm;
 }
 
 button {
@@ -16,4 +16,16 @@ button {
 
 button.primary {
   @apply bg-primary p-2 w-full text-white rounded-2xl;
+}
+
+label:hover {
+  @apply shadow-inner;
+}
+
+label > span {
+  @apply select-none;
+}
+
+button:hover {
+  @apply shadow-inner;
 }

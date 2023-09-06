@@ -30,7 +30,7 @@ export default function PlacesPage() {
         </div>
       )}
       {action === 'new' && (
-        <div>
+        <div className=' mx-0 lg:mx-64 md:mx-20'>
           <form action=''>
             <h2 className='text-xl mt-4'>Title</h2>
             <p className='text-gray-500 text-sm'>Title or name for your ad</p>
@@ -44,12 +44,12 @@ export default function PlacesPage() {
             <p className='text-gray-500 text-sm'>Photos of your car</p>
             <div className='flex gap-2'>
               <input type='text' placeholder={'Copy link to photo here...'} />
-              <button className='bg-gray-200 px-4 rounded-2xl'>
+              <button className='bg-gray-200 px-4 rounded-2xl hover:'>
                 Add&nbsp;Photo
               </button>
             </div>
             <div className='grid mt-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mt-2'>
-              <button className='flex justify-center gap-1 border m-auto bg-transparent text-gray-600 rounded-2xl p-8'>
+              <button className='flex justify-center gap-1 border m-auto bg-transparent text-gray-600 rounded-2xl p-8 hover:inner-shadow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -76,7 +76,7 @@ export default function PlacesPage() {
             </p>
             <div className='grid gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
               <label className='border p-4 flex rounded-xl gap-2 items-center cursor-pointer'>
-                <input type='checkbox' />
+                <input className='w-4 h-4  ' type='checkbox' />
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -94,7 +94,7 @@ export default function PlacesPage() {
                 <span>Trailering</span>
               </label>
               <label className='border p-4 flex rounded-xl gap-2 items-center cursor-pointer'>
-                <input type='checkbox' />
+                <input className='w-4 h-4 ' type='checkbox' />
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -112,7 +112,7 @@ export default function PlacesPage() {
                 <span>Shelter</span>
               </label>
               <label className='border p-4 flex rounded-xl gap-2 items-center cursor-pointer'>
-                <input type='checkbox' />
+                <input className='w-4 h-4 ' type='checkbox' />
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -135,25 +135,57 @@ export default function PlacesPage() {
                 <span>Trackside Mechanic</span>
               </label>
               <label className='border p-4 flex rounded-xl gap-2 items-center cursor-pointer'>
-                <input type='checkbox' />
+                <input className='w-4 h-4 ' type='checkbox' />
                 <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
+                  viewBox='0 0 512 512'
+                  fill='currentColor'
                   className='w-6 h-6'
                 >
                   <path
+                    fill='none'
+                    stroke='currentColor'
+                    strokeLinecap='round'
+                    strokeMiterlimit={10}
+                    strokeWidth={32}
+                    d='M322 416c0 35.35-20.65 64-56 64H134c-35.35 0-56-28.65-56-64M336 336c17.67 0 32 17.91 32 40h0c0 22.09-14.33 40-32 40H64c-17.67 0-32-17.91-32-40h0c0-22.09 14.33-40 32-40'
+                  />
+                  <path
+                    fill='none'
+                    stroke='currentColor'
+                    strokeLinecap='round'
+                    strokeMiterlimit={10}
+                    strokeWidth={32}
+                    d='M344 336H179.31a8 8 0 00-5.65 2.34l-26.83 26.83a4 4 0 01-5.66 0l-26.83-26.83a8 8 0 00-5.65-2.34H56a24 24 0 01-24-24h0a24 24 0 0124-24h288a24 24 0 0124 24h0a24 24 0 01-24 24zM64 276v-.22c0-55 45-83.78 100-83.78h72c55 0 100 29 100 84v-.22M241 112l7.44 63.97'
+                  />
+                  <path
+                    fill='none'
+                    stroke='currentColor'
+                    strokeLinecap='round'
+                    strokeMiterlimit={10}
+                    strokeWidth={32}
+                    d='M256 480h139.31a32 32 0 0031.91-29.61L463 112'
+                  />
+                  <path
+                    fill='none'
+                    stroke='currentColor'
                     strokeLinecap='round'
                     strokeLinejoin='round'
-                    d='M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z'
+                    strokeWidth={32}
+                    d='M368 112l16-64 47-16'
+                  />
+                  <path
+                    fill='none'
+                    stroke='currentColor'
+                    strokeLinecap='round'
+                    strokeMiterlimit={10}
+                    strokeWidth={32}
+                    d='M224 112h256'
                   />
                 </svg>
                 <span>Lunch</span>
               </label>
               <label className='border p-4 flex rounded-xl gap-2 items-center cursor-pointer '>
-                <input type='checkbox' />
+                <input className='w-4 h-4 ' type='checkbox' />
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -171,7 +203,7 @@ export default function PlacesPage() {
                 <span>Data Analysis</span>
               </label>
               <label className='border p-4 flex rounded-xl gap-2 items-center cursor-pointer '>
-                <input type='checkbox' />
+                <input className='w-4 h-4 ' type='checkbox' />
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -199,18 +231,18 @@ export default function PlacesPage() {
             <p className='text-gray-500 text-sm'>
               add check in and out times for car booking
             </p>
-            <div className='grid sm:grid-cols-2 gap-5 mx-16'>
+            <div className='grid sm:grid-cols-2 gap-0 sm:gap-40 '>
               <div>
-                <h3 className='mt-2 -mb-2'>Check in time</h3>
+                <h3 className='mt-2 -mb-1'>Check in time</h3>
                 <input type='text' placeholder='16:00' />
               </div>
               <div>
-                <h3 className='mt-2 -mb-2'>Check out time</h3>
+                <h3 className='mt-2 -mb-1'>Check out time</h3>
                 <input type='text' placeholder='10:00' />
               </div>
             </div>
             <div>
-              <button className=' my-4 primary'> Save</button>
+              <button className='  my-4 primary'>Save</button>
             </div>
           </form>
         </div>
