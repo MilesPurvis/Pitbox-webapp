@@ -1,8 +1,27 @@
-# React + Vite
+# Pitbox motorsports booking application :scroll: :racing_car:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application uses airbnb as insperation for developing a motorsports booking application.
 
-Currently, two official plugins are available:
+## The app had various functionality for its users: :busts_in_silhouette:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add/edit/remove track and motorsports oriented ads
+- Register/login/logout fuctionality with encrypted user password
+- Utilizes a secure cloud database to store information on users and ads
+- Allows users to book cars for motorsport outings
+- Users can view their bookings as well as ads via their profile
+
+### technology used to build the app :computer:
+
+- React + Vite
+- (Backend api) bcrypt.js,cookie parser,cors,dotenv,express,image-downloader,jsonwebtoken,mongoose,multer.
+- (Front end) axios, tailwind, autoprefixer, postcss
+- github
+
+### skills learned in this exercise :trophy:
+
+- (React) Routes, useState, useEffect, useParams, passing props, Link, Navigate creating multiple components.
+- Yarn commands, nodemon, Firebase: build and deploy
+- Network and console debuging (preview,payload,headers)
+- Various new technologies and dependencies as stated above.
+- Github and gitcommands aswell as bash commands.
+- Tailwind styling syntax and implementation
