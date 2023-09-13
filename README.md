@@ -10,14 +10,14 @@ This application uses airbnb as insperation for developing a motorsports booking
 - Allows users to book cars for motorsport outings
 - Users can view their bookings as well as ads via their profile
 
-### technology used to build the app :computer:
+### Technology used to build the app :computer:
 
 - React + Vite
 - (Backend api) bcrypt.js,cookie parser,cors,dotenv,express,image-downloader,jsonwebtoken,mongoose,multer.
 - (Front end) axios, tailwind, autoprefixer, postcss
 - github
 
-### skills learned in this exercise :trophy:
+### Skills learned in this exercise :trophy:
 
 - (React) Routes, useState, useEffect, useParams, passing props, Link, Navigate creating multiple components.
 - Yarn commands, nodemon, Firebase: build and deploy
