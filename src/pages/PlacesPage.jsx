@@ -6,7 +6,7 @@ import axios from 'axios';
 export default function PlacesPage() {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
-    axios.get('/places').then(({ data }) => {
+    axios.get('/user-places').then(({ data }) => {
       setPlaces(data);
     });
   }, []);
@@ -14,7 +14,7 @@ export default function PlacesPage() {
   return (
     <div>
       <AccountNav />
-      <div className='text-center'>
+      <div className='text-center font-semibold'>
         <Link
           className='inline-flex gap-1 bg-primary text-white py-2 px-6 rounded-full'
           to={'/account/places/new'}
@@ -33,7 +33,7 @@ export default function PlacesPage() {
               d='M12 4.5v15m7.5-7.5h-15'
             />
           </svg>
-          Add new place
+          Add new car
         </Link>
       </div>
       <div className='mt-4'>
@@ -41,7 +41,7 @@ export default function PlacesPage() {
           places.map((place) => (
             <Link
               to={'/account/places/' + place._id}
-              className='flex cursor-pointer gap-4 mt-3 bg-zinc-200 p-4 rounded-2xl hover:shadow-inner'
+              className='flex cursor-pointer gap-4 mt-3 bg-zinc-100 p-4 rounded-2xl'
             >
               <div className='flex w-32 h-32 bg-gray-300 rounded-2xl'>
                 {place.photos.length > 0 && (

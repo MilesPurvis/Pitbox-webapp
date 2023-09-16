@@ -16,6 +16,7 @@ export default function PlacesFormPage() {
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
   const [redirect, setRedirect] = useState(false);
+  const [price, setPrice] = useState(100);
 
   useEffect(() => {
     if (!id) {
@@ -31,6 +32,7 @@ export default function PlacesFormPage() {
       setExtraInfo(data.extraInfo);
       setCheckIn(data.checkIn);
       setCheckOut(data.checkOut);
+      setPrice(data.price);
     });
   }, [id]);
 
@@ -62,6 +64,7 @@ export default function PlacesFormPage() {
       extraInfo,
       checkIn,
       checkOut,
+      price,
     };
 
     if (id) {
@@ -120,7 +123,7 @@ export default function PlacesFormPage() {
           'Check in & out times',
           'add check in and out times for car booking'
         )}
-        <div className='grid sm:grid-cols-2 gap-0 sm:gap-40 '>
+        <div className='grid sm:grid-cols-3 gap-0 sm:gap-40 '>
           <div>
             <h3 className='mt-2 -mb-1'>Check in time</h3>
             <input
@@ -139,7 +142,16 @@ export default function PlacesFormPage() {
               placeholder='10'
             />
           </div>
+          <div>
+            <h3 className='mt-2 -mb-1'>Price per day</h3>
+            <input
+              type='number'
+              value={price}
+              onChange={(ev) => setPrice(ev.target.value)}
+            />
+          </div>
         </div>
+
         <div>
           <button className='  my-4 primary'>Save</button>
         </div>

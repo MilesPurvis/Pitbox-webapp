@@ -20,7 +20,14 @@ export default function ProfilePage() {
   }
 
   if (!ready) {
-    return 'Loading...';
+    return (
+      <div className='flex justify-center align-bottom mt-32'>
+        <div>
+          <img className='w-24' src='loading.gif' />
+          <p className='text-center font-semibold'>Loading...</p>
+        </div>
+      </div>
+    );
   }
 
   if (ready && !user && !redirect) {
@@ -34,7 +41,7 @@ export default function ProfilePage() {
     <div>
       <AccountNav />
       {subpage === 'profile' && (
-        <div className='text-center max-w-lg mx-auto'>
+        <div className='text-center max-w-lg mx-auto font-semibold'>
           Logged in as {user.name} ({user.email})<br />
           <button onClick={logout} className='primary max-w-sm mt-2'>
             Logout

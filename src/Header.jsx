@@ -5,7 +5,7 @@ import { UserContext } from './UserContext';
 export default function Header() {
   const { user } = useContext(UserContext);
   return (
-    <header className='flex justify-between'>
+    <header className='flex justify-between font-semibold'>
       <Link to={'/'} className='flex items-center'>
         <svg
           fill='none'
@@ -23,12 +23,12 @@ export default function Header() {
         <span className=' text-2xl flex items-center mr-2'>Pit&nbsp;Box</span>
       </Link>
       {/* Search Section */}
-      <div className='flex gap-2 border border-gray-300 rounded-full py-3 px-4 shadow-md  font-open-sans '>
+      <div className='flex gap-2 border border-gray-300 rounded-full py-3 px-4 shadow-md hidden md:flex '>
         <div>Track</div>
         <div className='border-l border-gray-300'></div>
         <div>Date</div>
         <div className='border-l border-gray-300'></div>
-        <div>Add&nbsp;guests</div>
+        <div>Add&nbsp;Guests</div>
 
         <button className='bg-primary text-white p-1 rounded-full'>
           <svg
