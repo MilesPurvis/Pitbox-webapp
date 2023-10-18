@@ -1,7 +1,7 @@
 # Pitbox motorsports booking application :scroll: :racing_car:
 
 This application uses airbnb as insperation for developing a motorsports booking application.
-[Project Images](#images)
+[Project Images](#mages-from-the-project-camera_flash)
 
 ## The app had various functionality for its users: :busts_in_silhouette:
 
