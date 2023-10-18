@@ -46,8 +46,8 @@ This application uses airbnb as insperation for developing a motorsports booking
 ![MyListings](https://github.com/MilesPurvis/Pitbox-webapp/assets/87283172/67f985d3-c904-4da6-bc01-b334807e893a)
 
 ### My Bookings
-![MyBooking1](https://github.com/MilesPurvis/Pitbox-webapp/assets/87283172/04c06dcf-92bb-486e-a202-09ca265e799b)
 ![MyBooking2](https://github.com/MilesPurvis/Pitbox-webapp/assets/87283172/d2186e7a-8db9-4003-a320-8cbda270fdb2)
+![MyBooking1](https://github.com/MilesPurvis/Pitbox-webapp/assets/87283172/04c06dcf-92bb-486e-a202-09ca265e799b)
 
 
 ### Add Listing
