@@ -1,6 +1,7 @@
 # Pitbox motorsports booking application :scroll: :racing_car:
 
 This application uses airbnb as insperation for developing a motorsports booking application.
+[Project Images](#images)
 
 ## The app had various functionality for its users: :busts_in_silhouette:
 
@@ -28,7 +29,7 @@ This application uses airbnb as insperation for developing a motorsports booking
 - Tailwind styling syntax and implementation
 
 
-## Images from the project :camera_flash:
+## #images Images from the project :camera_flash:
 
 ### Main Page
 ![MainPage](https://github.com/MilesPurvis/Pitbox-webapp/assets/87283172/585ddf4d-88cc-416b-8f07-84cd668ade22)
