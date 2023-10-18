@@ -29,7 +29,7 @@ This application uses airbnb as insperation for developing a motorsports booking
 - Tailwind styling syntax and implementation
 
 
-#images  ## Images from the project :camera_flash:
+## Images from the project :camera_flash:
 
 ### Main Page
 ![MainPage](https://github.com/MilesPurvis/Pitbox-webapp/assets/87283172/585ddf4d-88cc-416b-8f07-84cd668ade22)
