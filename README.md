@@ -3,7 +3,7 @@
 This application uses Airbnb as inspiration for developing a motorsports booking application.
 [Project Images](#images-from-the-project-camera_flash)
 
-## The app had various functionalities for its users: :busts_in_silhouette:
+## The app had various functionalities for its users 📣
 
 - Add/edit/remove track and motorsports-oriented ads
 - Register/login/logout functionality with encrypted user password
