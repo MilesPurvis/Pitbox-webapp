@@ -44,18 +44,12 @@ export default function PlacesPage() {
               to={'/account/places/' + place._id}
               className='flex cursor-pointer gap-4 mt-3 bg-zinc-100 p-4 rounded-2xl'
             >
-              <div className='flex w-32 h-32 bg-gray-300 rounded-2xl'>
-                {/* {place.photos.length > 0 && (
-                  <img
-                    className='object-cover rounded-2xl'
-                    src={'http://localhost:4000/' + place.photos[0]}
-                  />
-                )} */}
-
+              <div className='flex   h-40 w-40  aspect-square bg-gray-300 rounded-2xl'>
                 <PlaceImg place={place} />
               </div>
               <div className='grow-0 shrink'>
                 <h2 className='text-xl'>{place.title}</h2>
+                <h3 className='font-semibold'>${place.price}/day</h3>
                 <p className='text-sm mt-2'>{place.description}</p>
               </div>
             </Link>

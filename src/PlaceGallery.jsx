@@ -61,7 +61,7 @@ export default function PlaceGallary({ place }) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className='aspect-square object-cover cursor-pointer'
-                src={'http://localhost:4000/' + place.photos[0]}
+                src={'http://localhost:4000/' + place.photos[1]}
               />
             </div>
           )}
@@ -72,7 +72,7 @@ export default function PlaceGallary({ place }) {
                 <img
                   onClick={() => setShowAllPhotos(true)}
                   className='aspect-square object-cover relative top-2 cursor-pointer'
-                  src={'http://localhost:4000/' + place.photos[0]}
+                  src={'http://localhost:4000/' + place.photos[2]}
                 />
               </div>
             )}

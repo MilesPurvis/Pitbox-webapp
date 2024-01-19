@@ -20,7 +20,7 @@ export default function AccountNav() {
   }
   return (
     <nav className='w-full my-8 gap-2 justify-center flex font-semibold'>
-      <Link className={linkClasses('profile')} to={'/account'}>
+      <Link className={linkClasses('profile')} to={'/account/profile'}>
         <svg
           viewBox='0 0 1024 1024'
           fill='currentColor'
