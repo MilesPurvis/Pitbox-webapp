@@ -13,7 +13,7 @@ import PlacePage from './pages/PlacePage';
 import BookingsPage from './pages/BookingsPage';
 import BookingPage from './pages/BookingPage';
 
-axios.defaults.baseURL = 'https://15.222.246.242:443';
+axios.defaults.baseURL = 'http://70.29.19.63:8080/';
 axios.defaults.withCredentials = true;
 
 function App() {

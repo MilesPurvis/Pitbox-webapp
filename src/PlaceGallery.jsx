@@ -33,7 +33,7 @@ export default function PlaceGallary({ place }) {
           {place?.photos?.length > 0 &&
             place.photos.map((photo) => (
               <div>
-                <img src={'http://localhost:4000/' + photo} />
+                <img src={'http://70.29.19.63:8080/' + photo} />
               </div>
             ))}
         </div>
@@ -50,7 +50,7 @@ export default function PlaceGallary({ place }) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className='aspect-square object-cover cursor-pointer'
-                src={'http://localhost:4000/' + place.photos[0]}
+                src={'http://70.29.19.63:8080/' + place.photos[0]}
               />
             </div>
           )}
@@ -61,7 +61,7 @@ export default function PlaceGallary({ place }) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className='aspect-square object-cover cursor-pointer'
-                src={'http://localhost:4000/' + place.photos[1]}
+                src={'http://70.29.19.63:8080/' + place.photos[1]}
               />
             </div>
           )}
@@ -72,7 +72,7 @@ export default function PlaceGallary({ place }) {
                 <img
                   onClick={() => setShowAllPhotos(true)}
                   className='aspect-square object-cover relative top-2 cursor-pointer'
-                  src={'http://localhost:4000/' + place.photos[2]}
+                  src={'http://70.29.19.63:8080/' + place.photos[2]}
                 />
               </div>
             )}
