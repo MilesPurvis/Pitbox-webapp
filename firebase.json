@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "pit-box-booking",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [

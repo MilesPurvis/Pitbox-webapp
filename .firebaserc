@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "pit-box-booking"
-  }
+  },
+  "targets": {
+    "pit-box-booking": {
+      "hosting": {
+        "pit-box-booking": [
+          "pit-box-booking"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
