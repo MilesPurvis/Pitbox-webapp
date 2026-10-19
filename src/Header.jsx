@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from './UserContext';
+import { API_URL } from './api';
 
 export default function Header() {
   const { user } = useContext(UserContext);
@@ -44,7 +45,7 @@ export default function Header() {
         </a>
         <div className='border-l border-gray-300'></div>
         <button className='bg-primary text-white px-1  rounded-full'>
-          <a href='http://70.29.19.63:8080/places' target='_blank'>
+          <a href={`${API_URL}/places`} target='_blank'>
             Check JSON
           </a>
         </button>

@@ -19,6 +19,13 @@ This application uses Airbnb as inspiration for developing a motorsports booking
 - (Backend API) bcrypt.js, cookie parser, cors, dotenv, express, image-downloader, jsonwebtoken, mongoose, multer.
 - (Front end) Axios, tailwind, autoprefixer, postcss
 
+### Running it :wrench:
+
+The API lives in [Pitbox-backend](https://github.com/MilesPurvis/Pitbox-backend). The frontend calls it at `/api` on its own origin.
+
+- Dev: run the backend on `localhost:4000`, then `npm run dev` (Vite proxies `/api`). To use the live API instead: `API_PROXY_TARGET=https://pitbox.milespurvis.me npm run dev`.
+- Deploy: `npm run deploy` builds and syncs `dist/` to lemonpi, served at https://pitbox.milespurvis.me.
+
 ### Skills learned in this exercise :trophy:
 
 - (React) Routes, useState, useEffect, useParams, passing props, Link, Navigate creating multiple components.

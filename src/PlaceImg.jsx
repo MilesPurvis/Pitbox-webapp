@@ -1,3 +1,5 @@
+import { photoUrl } from './api';
+
 export default function PlaceImg({ place, index = 0, className = null }) {
   if (!place.photos?.length) {
     return '';
@@ -9,7 +11,7 @@ export default function PlaceImg({ place, index = 0, className = null }) {
   return (
     <img
       className={className}
-      src={'http://70.29.19.63:8080/' + place.photos[index]}
+      src={photoUrl(place.photos[index])}
       alt='sample'
     />
   );
