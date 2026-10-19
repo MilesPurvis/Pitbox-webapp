@@ -21,10 +21,10 @@ This application uses Airbnb as inspiration for developing a motorsports booking
 
 ### Running it :wrench:
 
-The API lives in [Pitbox-backend](https://github.com/MilesPurvis/Pitbox-backend). The frontend calls it at `/api` on its own origin.
+The API lives in [Pitbox-backend](https://github.com/MilesPurvis/Pitbox-backend). Production builds call it at `VITE_API_URL` (see `.env.production`); dev uses `/api` through the Vite proxy.
 
-- Dev: run the backend on `localhost:4000`, then `npm run dev` (Vite proxies `/api`). To use the live API instead: `API_PROXY_TARGET=https://pitbox.milespurvis.me npm run dev`.
-- Deploy: `npm run deploy` builds and syncs `dist/` to lemonpi, served at https://pitbox.milespurvis.me.
+- Dev: run the backend on `localhost:4000`, then `npm run dev` (Vite proxies `/api`). To use the live API instead: `API_PROXY_TARGET=https://pitbox-api.milespurvis.me npm run dev`.
+- Deploy: `npm run deploy` builds and deploys to Firebase Hosting (https://pitbox.milespurvis.me).
 
 ### Skills learned in this exercise :trophy:
 
