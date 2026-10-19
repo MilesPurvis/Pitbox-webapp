@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { photoUrl } from './api';
 
 export default function Uploader({ addedPhotos, onChange }) {
   const [photoLink, setPhotoLink] = useState('');
@@ -67,7 +68,7 @@ export default function Uploader({ addedPhotos, onChange }) {
             <div className='h-32 flex relative'>
               <img
                 className='rounded-2xl w-full object-cover'
-                src={'http://70.29.19.63:8080/' + link}
+                src={photoUrl(link)}
                 key={link}
               />
               <button
@@ -123,6 +124,7 @@ export default function Uploader({ addedPhotos, onChange }) {
           <input
             type='file'
             multiple
+            accept='image/jpeg,image/png,image/webp,image/gif'
             className='hidden'
             onChange={uploadPhoto}
           />

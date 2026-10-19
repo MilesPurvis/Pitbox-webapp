@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { photoUrl } from '../api';
 
 export default function IndexPage() {
   const [places, setPlaces] = useState([]);
@@ -19,7 +20,7 @@ export default function IndexPage() {
               {place.photos?.[0] && (
                 <img
                   className='rounded-2xl object-cover aspect-square '
-                  src={'http://70.29.19.63:8080/' + place.photos?.[0]}
+                  src={photoUrl(place.photos?.[0])}
                 />
               )}
             </div>

@@ -12,8 +12,9 @@ import PlacesFormPage from './pages/PlacesFormPage';
 import PlacePage from './pages/PlacePage';
 import BookingsPage from './pages/BookingsPage';
 import BookingPage from './pages/BookingPage';
+import { API_URL } from './api';
 
-axios.defaults.baseURL = 'http://70.29.19.63:8080/';
+axios.defaults.baseURL = API_URL;
 axios.defaults.withCredentials = true;
 
 function App() {

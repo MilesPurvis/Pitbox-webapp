@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { photoUrl } from './api';
 
 export default function PlaceGallary({ place }) {
   const [showAllPhotos, setShowAllPhotos] = useState(false);
@@ -33,7 +34,7 @@ export default function PlaceGallary({ place }) {
           {place?.photos?.length > 0 &&
             place.photos.map((photo) => (
               <div>
-                <img src={'http://70.29.19.63:8080/' + photo} />
+                <img src={photoUrl(photo)} />
               </div>
             ))}
         </div>
@@ -50,7 +51,7 @@ export default function PlaceGallary({ place }) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className='aspect-square object-cover cursor-pointer'
-                src={'http://70.29.19.63:8080/' + place.photos[0]}
+                src={photoUrl(place.photos[0])}
               />
             </div>
           )}
@@ -61,7 +62,7 @@ export default function PlaceGallary({ place }) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className='aspect-square object-cover cursor-pointer'
-                src={'http://70.29.19.63:8080/' + place.photos[1]}
+                src={photoUrl(place.photos[1])}
               />
             </div>
           )}
@@ -72,7 +73,7 @@ export default function PlaceGallary({ place }) {
                 <img
                   onClick={() => setShowAllPhotos(true)}
                   className='aspect-square object-cover relative top-2 cursor-pointer'
-                  src={'http://70.29.19.63:8080/' + place.photos[2]}
+                  src={photoUrl(place.photos[2])}
                 />
               </div>
             )}
